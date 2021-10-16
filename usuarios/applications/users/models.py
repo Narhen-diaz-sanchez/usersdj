@@ -18,6 +18,8 @@ class User (AbstractBaseUser, PermissionsMixin):
     apellidos = models.CharField(max_length=30, blank=True)
     genero = models.CharField(max_length=1, choices=GENDER_CHOICES, blank=True)
     is_staff = models.BooleanField(default=False)
+    codregistro = models.CharField(max_length=6, blank=True)
+    is_active = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'username'
 

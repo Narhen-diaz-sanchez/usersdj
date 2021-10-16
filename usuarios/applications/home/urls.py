@@ -4,7 +4,7 @@ app_name = 'home_app'
 
 urlpatterns = [
     path('panel/',
-         views.HomeView.as_view(),
+         views.HomePageView.as_view(),
          name='panel'
          ),
 ]

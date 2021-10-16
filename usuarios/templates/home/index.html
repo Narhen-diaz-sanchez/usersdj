@@ -10,7 +10,7 @@
     <h1>Página principal</h1>
     <h2>Bienvenido: {{ user }}</h2>
     <ul>
-        <li><a href="#">Actualizar datos</a></li>
+        <li><a href="{% url 'users_app:user-update' %}">Actualizar datos</a></li>
         <li><a href="{% url 'users_app:user-logout' %}">Cerrar sesión</a></li>
     </ul>
 </body>
